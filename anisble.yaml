@@ -1,0 +1,39 @@
+Courses:
+  coursename : "Datascience"
+  version : 11.11
+  price : &price 2000
+  is_public : true
+  release_date : 2022-3-5 
+  pre_enroll : null
+  tags:
+    - Python
+    - MySQL
+    - PowerBI
+    - ADV Excel
+    - Machine Learning
+    - Deep Learning
+  course_ta : ["A","B"]
+  ta_details : 
+    - name : "A"
+      email : a@.dev
+      role : "content admin"
+
+    - {name : "B", email : "b@.dev", role : "disscusion admin"}
+  short_des : >
+    here is short 
+    description for course 
+    removes all indentation(formatings)
+  long_des : |
+    here is long 
+      description for course 
+    now we can store all
+      indentation and related
+    things.
+  process_payments : *price
+
+  adv : &adv 
+    mykey : myval
+
+  another_adv : 
+    one : two
+    << : *adv 
